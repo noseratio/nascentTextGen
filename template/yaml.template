@@ -1,0 +1,6 @@
+# example of a YAML template
+request:
+  ip: ${ this.dateTime.client_ip }
+  ip_time_zone: ${ this.dateTime.abbreviation }
+  server_utc_time: ${ this.dateTime.utc_datetime }
+  local_time: ${ new Date() }
